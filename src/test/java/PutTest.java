@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 
 public class PutTest {
 
-    @Test(dependsOnMethods = {"PostTest.post_test"})
+    @Test(dependsOnMethods = {"PostTest.post_test", "PostTest.post_test_2"})
     public void put_test()
     {
         JSONObject petInfo = new JSONObject();
